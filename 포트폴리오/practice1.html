@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeyoung's Portfolio</title>
+    <!-- Google Fonts 가져오기 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
+        /* 기본 스타일 설정 */
+        body {
+            font-family: 'Do Hyeon', 'Roboto', sans-serif; /* 한글은 Do Hyeon, 영어는 Roboto */
+            color: black;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4; /* 전체 배경색 설정 */
+        }
+
+        /* 네비게이션 바 스타일 */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* 제목 텍스트 스타일 */
+        .title-text {
+            font-size: 40px;
+            text-align: center;
+            margin: 60px 0 20px; /* 네비게이션 바 높이 고려 */
+        }
+
+        /* 섹션 스타일 */
+        section {
+            background-color: #fff; /* 각 섹션의 배경을 흰색으로 설정 */
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 효과 */
+            margin: 20px auto;
+            max-width: 900px;
+            transition: all 0.3s ease;
+        }
+
+        section:hover {
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* 마우스 오버 시 그림자 효과 변화 */
+            transform: scale(1.02); /* 마우스 오버 시 크기 약간 커지기 */
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            margin: 12px 0;
+            line-height: 1.8;
+        }
+
+        p span {
+            font-weight: 600;
+            color: #f39c12; /* 강조할 텍스트 색상 */
+        }
+
+        /* 리스트 스타일 */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 18px;
+            font-weight: 400;
+            margin: 10px 0;
+        }
+
+        /* 링크 스타일 */
+        a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <nav>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#archiving">Archiving</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#career">Career</a></li>
+        </ul>
+    </nav>
+
+    <!-- 제목 -->
+    <p class="title-text">Yeyoung's Portfolio</p>
+
+    <!-- About Me 섹션 -->
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>안녕하세요 저는<span>김예영</span>입니다.</p>
+            <p>23살이고, 현재 <span>호서대학교 </span>에서 <span>컴퓨터공학</span>을 전공하고 있습니다.</p>
+        <p>취미로는 배드민턴과 게임 롤을 즐겨하고 있습니다.</p>
+        <p>저의 개인적인 좌우명은: <span>"너무 조급해 하지 말자, 난 할 수 있다!"</span></p>
+        <p>기술에 대한 학습을 계속하며 성장하고 있습니다. 제 작업물은 GitHub</a>에서 확인하실 수 있습니다!</p>
+    </section>
+
+    <!-- Skills 섹션 -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Dart, C++, CMake</li>
+            <li>Git, Netlify</li>
+
+        </ul>
+    </section>
+
+    <!-- Archiving 섹션 -->
+    <section id="archiving">
+        <h2>Archiving</h2>
+        <p>다음은 제가 작업물과 지식을 공유하는 플랫폼입니다:</p>
+        <ul>
+            <li><a href="https://github.com/YeyoungKim" target="_blank">GitHub</a> - 소스 코드와 프로젝트들</li>
+        </ul>
+    </section>
+
+    <!-- Projects 섹션 -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>제가 작업한 프로젝트들입니다:</p>
+        <ul>
+            <li><strong>Project 1: </strong>HTML, CSS, JavaScript, Python을 사용한 당근마켓 앱을 사이트로 변환한 작업물</li>
+            <li><strong>Project 2: </strong>HTML, CSS 를 이용하여 만든 플레이트비 안내 사이트</li>
+            <li><strong>Project 3: </strong>HTML, CSS 를 이용하여 만든 호서대 컴퓨터공학부 편의 사이트</li>
+            <li><strong>Project 4: </strong>졸업 작품으로 한 Dart, C++, CMake, CSS, JavaScript를 이용한 노인 안전 앱</li>
+        </ul>
+    </section>
+
+    <!-- Career 섹션 -->
+    <section id="career">
+        <h2>View Projects </h2>
+        <p>다음은 제가 만들 사이트들 입니다.</p>
+        <ul>
+            <li><strong>당근마켓</strong>ㅎ</li>
+            <li><strong>플레이트비 사이트</strong>ㅎ</li>
+            <li><strong>호서대학교 컴퓨터공학부 편의 사이트 </strong>ㅎ</li>
+            <li><strong>노인 안전 관리 앱</strong>ㅎ</li>
+        </ul>
+    </section>
+</body>
+</html>
